@@ -46,7 +46,8 @@ namespace webProjesi.html
                 }
                 else
                 {
-                    Response.Redirect("anasayfa.aspx");
+
+                    Response.Redirect("anasayfa.aspx")
                 }
                 
 
