@@ -7,11 +7,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using webProjesi.fluentNHibernate;
+using webProjesi.fluentNHibernate.controllers;
 using webProjesi.fluentNHibernate.domainClasses;
+using webProjesi.services;
 namespace webProjesi.html
 {
     public partial class WebForm1 : System.Web.UI.Page
-    {
+    {   
+        private yeniUyeKayit uye = new yeniUyeKayit();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -34,7 +37,7 @@ namespace webProjesi.html
                 {
                     System.Diagnostics.Debug.WriteLine(3);
                     System.Diagnostics.Debug.WriteLine(item.tcNo+"sifre "+item.sifre+"isimsoyisim "+ item.isimSoyisim+"email"+item.email+"telno"+item.telNo);
-                   
+                    uyeService.uye = item;
                     
                 }
                 if(uyeler.Count == 0)
@@ -42,17 +45,21 @@ namespace webProjesi.html
                     this.ikaz.InnerHtml = "BILGILERINIZI YANLIS GIRDINIZ";
                     this.tcNo.Style["background-color"] = " red";
                     this.sifre.Style["background-color"] = "red";
-
+                       
                 }
                 else
                 {
 
-                    Response.Redirect("anasayfa.aspx")
+                    Response.Redirect("uyeAnasayfa.aspx");
                 }
                 
 
 
             }
+        }
+        public yeniUyeKayit getUye()
+        {
+            return uye;
         }
     }
 }

@@ -1,33 +1,32 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="firsatlar.aspx.cs" Inherits="webProjesi.html.firsatlar" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="uyeAnasayfa.aspx.cs" Inherits="webProjesi.html.uyeAnasayfa" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <title>Firsatlar</title>
-    <link type="text/css"  rel="stylesheet" href="../css/firsatlar.css" />
-
+    <title>WinToWin</title>
+    <link type ="text/css" rel ="stylesheet" href="../css/uyeAnasayfa.css" />
 </head>
 <body>
-   <div class="header">
+     <div class="header">
         <div class="logo">
             <img src="../img/logo.png" />
         </div>
+       
         <div class="nav">
             <nav>
-                 <a class="navi" href="anasayfa.aspx">Anasayfa</a> &nbsp; &nbsp; &nbsp;
-                <a class="navi" href="wtwnedir.aspx">WTW NEDIR?</a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="firsatlar.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="kazananlar.aspx">Kimlere Kazandırdık ?</a>&nbsp; &nbsp;&nbsp;
-                <a class="navi" href="uyeol.aspx">Uye Ol </a>&nbsp;
-                <a class="navi" href="girisYap.aspx">Giris Yap </a>
+                <a class="navi" href="uyeAnasayfa.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
+                <a class="navi" href="#">Benim Fırsatlarım</a>&nbsp; &nbsp; &nbsp;
+                <a class="navi" href="firsatYarat.aspx">Fırsat Yarat</a>&nbsp; &nbsp;&nbsp;
+                <a class="navi" href="#">Profilim </a>&nbsp;
+                <a class="navi" href="girisYap.aspx" style ="color : red; font-weight:bold;">Cikis Yap </a>
+         
             </nav>
         </div>
     </div>
-
-
-    <div class="icerik">
+   
+     <div class="icerik">
         <table>
             <caption>Aktif Firsatlardan Yararlanmak Icin Hemen Uye Olun</caption>
             <thead>
@@ -103,6 +102,7 @@
         </table>
 
     </div>
-   
+
+    
 </body>
 </html>

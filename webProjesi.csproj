@@ -120,17 +120,21 @@
   <ItemGroup>
     <Content Include="css\anasayfa.css" />
     <Content Include="css\firsatlar.css" />
+    <Content Include="css\firsatYarat.css" />
     <Content Include="css\giris.css" />
     <Content Include="css\kazananlar.css" />
+    <Content Include="css\uyeAnasayfa.css" />
     <Content Include="css\uyeol.css" />
     <Content Include="css\wtwnedir.css" />
     <Content Include="html\anasayfa.aspx" />
     <Content Include="html\anasayfa.html" />
     <Content Include="html\firsatlar.aspx" />
     <Content Include="html\firsatlar.html" />
+    <Content Include="html\firsatYarat.aspx" />
     <Content Include="html\giris.html" />
     <Content Include="html\kazananlar.aspx" />
     <Content Include="html\kazananlar.html" />
+    <Content Include="html\uyeAnasayfa.aspx" />
     <Content Include="html\uyeol.aspx" />
     <Content Include="html\uyeol.html" />
     <Content Include="html\girisYap.aspx" />
@@ -142,6 +146,7 @@
     <Content Include="img\mainOpportunity .jpg" />
     <Content Include="img\nedirBuWTW.jpg" />
     <Content Include="JS\anasayfa.js" />
+    <Content Include="JS\firsatYarat.js" />
     <Content Include="JS\slider-min.js" />
     <Content Include="JS\slider.js" />
     <Content Include="JS\yeniUyeKayit.js" />
@@ -154,8 +159,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fluentNHibernate\controllers\yeniFirsatlarController.cs" />
     <Compile Include="fluentNHibernate\controllers\yeniUyeKayitController.cs" />
+    <Compile Include="fluentNHibernate\domainClasses\yeniFirsatlar.cs" />
     <Compile Include="fluentNHibernate\domainClasses\yeniUyeKayit.cs" />
+    <Compile Include="fluentNHibernate\mappingClasses\yeniFirsatlarMap.cs" />
     <Compile Include="fluentNHibernate\mappingClasses\yeniUyeKayitMap.cs" />
     <Compile Include="fluentNHibernate\NHibernateHelper.cs" />
     <Compile Include="html\anasayfa.aspx.cs">
@@ -172,6 +180,13 @@
     <Compile Include="html\firsatlar.aspx.designer.cs">
       <DependentUpon>firsatlar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\firsatYarat.aspx.cs">
+      <DependentUpon>firsatYarat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\firsatYarat.aspx.designer.cs">
+      <DependentUpon>firsatYarat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\girisYap.aspx.cs">
       <DependentUpon>girisYap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,6 +200,13 @@
     </Compile>
     <Compile Include="html\kazananlar.aspx.designer.cs">
       <DependentUpon>kazananlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\uyeAnasayfa.aspx.cs">
+      <DependentUpon>uyeAnasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\uyeAnasayfa.aspx.designer.cs">
+      <DependentUpon>uyeAnasayfa.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\uyeol.aspx.cs">
       <DependentUpon>uyeol.aspx</DependentUpon>
@@ -200,6 +222,7 @@
     <Compile Include="html\wtwnedir.aspx.designer.cs">
       <DependentUpon>wtwnedir.aspx</DependentUpon>
     </Compile>
+    <Compile Include="services\uyeService.cs" />
     <Compile Include="program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

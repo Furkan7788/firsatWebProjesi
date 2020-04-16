@@ -10,23 +10,22 @@ using webProjesi.fluentNHibernate.domainClasses;
 
 namespace webProjesi.fluentNHibernate.controllers
 {
-    public class yeniUyeKayitController
+    public class yeniFirsatlarController
     {
-        private yeniUyeKayit uyem = new yeniUyeKayit();
-        public static void add(yeniUyeKayit uye)
+        public static void add(yeniFirsatlar firsat)
         {
-  
+
             var isession = NHibernateHelper.CreateSessionFactory();
             using (var session = isession.OpenSession())
             {
                 using (var trans = session.BeginTransaction())
                 {
 
-                    session.SaveOrUpdate(uye);
+                    session.SaveOrUpdate(firsat);
                     trans.Commit();
                 }
             }
         }
-       
     }
+
 }

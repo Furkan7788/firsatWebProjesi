@@ -30,6 +30,7 @@ namespace webProjesi.html
             yeniUye.email = String.Format("{0}", Request.Form["email"]);
             yeniUye.sifre = String.Format("{0}", Request.Form["sifre"]);
             yeniUyeKayitController.add(yeniUye);
+            
            
         }
     }
