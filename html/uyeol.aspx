@@ -27,12 +27,14 @@
             </nav>
         </div>
     </div>
+    
     <div class="icerik">
         <div class="form-style-3">
             <form runat ="server" method ="post" action ="uyeol.aspx">
+                <p runat="server" id="yeniUyeOlIkaz" style ="background-color:aquamarine; color:red;"></p>
                 <fieldset>
                     <legend>Personal</legend>
-                    <label for="field1"><span>TC Numarasi <span class="required">*</span></span><input id="tcNo" type="text" class="input-field" name="tcNo" value="" /></label>
+                    <label for="field1"><span>TC Numarasi <span class="required">*</span></span><input id="tcNo" type="text" class="input-field" name="tcNo" value="" maxlength="11" required minlength="5"  /></label>
                     <label for="field1"><span>Isim Soyisim <span class="required">*</span></span><input id="isimSoyisim" type="text" class="input-field" name="isimSoyisim" value="" /></label>
                     <label for="field2"><span>Email <span class="required">*</span></span><input id="email" type="email" class="input-field" name="email" value="" /></label>
                     <label for="field3"><span>Telefon Numarasi <span class="required">*</span></span><input id="telNo" type="text" class="input-field" name="telNo" value="" /></label>
@@ -42,8 +44,8 @@
 
                 <fieldset>
                     <legend>Sistem Girisi</legend>
-                    <label for="field3"><span>Sifre <span class="required">*</span></span><input id="sifre" type="text" class="input-field" name="sifre" value="" /></label>
-                    <label for="field3"><span>Sifreyi Tekrar giriniz <span class="required">*</span></span><input id="sifreTekrar" type="text" class="input-field" name="field3" value="" /></label>
+                    <label for="field3"><span>Sifre <span class="required">*</span></span><input id="sifre" type="password" class="input-field" name="sifre" value="" /></label>
+                    <label for="field3"><span>Sifreyi Tekrar giriniz <span class="required">*</span></span><input id="sifreTekrar" type="password" class="input-field" name="field3" value="" /></label>
                     <label><span> </span><asp:Button ID="BtnGonder" runat="Server" text="Gonder" OnClick="BtnGonder_Click"></asp:Button></label>
                    
                 </fieldset>

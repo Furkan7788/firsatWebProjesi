@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using webProjesi.fluentNHibernate.domainClasses;
 using webProjesi.fluentNHibernate.controllers;
+using System.Windows.Forms;
 
 namespace webProjesi.html
 {
@@ -31,6 +32,8 @@ namespace webProjesi.html
             yeniUye.sifre = String.Format("{0}", Request.Form["sifre"]);
             yeniUyeKayitController.add(yeniUye);
             
+           
+            yeniUyeOlIkaz.InnerHtml = "Hos Geldiniz Sayin Uyemiz Giris Yap Sayfasi Uzerinden Firsatlara Erisebilirsiniz";
            
         }
     }

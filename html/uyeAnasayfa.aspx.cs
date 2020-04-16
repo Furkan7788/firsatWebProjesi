@@ -11,8 +11,7 @@ namespace webProjesi.html
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.uyeIsimSoyisim.InnerHtml = services.uyeService.uye.isimSoyisim.ToString();
-            this.uyeTcno.InnerHtml = services.uyeService.uye.tcNo.ToString();
+          
         }
     }
 }

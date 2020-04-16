@@ -104,6 +104,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -123,6 +124,7 @@
     <Content Include="css\firsatYarat.css" />
     <Content Include="css\giris.css" />
     <Content Include="css\kazananlar.css" />
+    <Content Include="css\profilGoruntule.css" />
     <Content Include="css\uyeAnasayfa.css" />
     <Content Include="css\uyeol.css" />
     <Content Include="css\wtwnedir.css" />
@@ -134,6 +136,7 @@
     <Content Include="html\giris.html" />
     <Content Include="html\kazananlar.aspx" />
     <Content Include="html\kazananlar.html" />
+    <Content Include="html\profilGoruntule.aspx" />
     <Content Include="html\uyeAnasayfa.aspx" />
     <Content Include="html\uyeol.aspx" />
     <Content Include="html\uyeol.html" />
@@ -145,10 +148,12 @@
     <Content Include="img\mainBG.jpg" />
     <Content Include="img\mainOpportunity .jpg" />
     <Content Include="img\nedirBuWTW.jpg" />
+    <Content Include="img\uyePP.PNG" />
     <Content Include="JS\anasayfa.js" />
     <Content Include="JS\firsatYarat.js" />
     <Content Include="JS\slider-min.js" />
     <Content Include="JS\slider.js" />
+    <Content Include="JS\uyeProfil.js" />
     <Content Include="JS\yeniUyeKayit.js" />
     <Content Include="sliderImg\fastfood.jpg" />
     <Content Include="sliderImg\sport.jpg" />
@@ -200,6 +205,13 @@
     </Compile>
     <Compile Include="html\kazananlar.aspx.designer.cs">
       <DependentUpon>kazananlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\profilGoruntule.aspx.cs">
+      <DependentUpon>profilGoruntule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\profilGoruntule.aspx.designer.cs">
+      <DependentUpon>profilGoruntule.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\uyeAnasayfa.aspx.cs">
       <DependentUpon>uyeAnasayfa.aspx</DependentUpon>
