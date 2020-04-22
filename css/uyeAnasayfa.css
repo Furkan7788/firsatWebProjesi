@@ -13,7 +13,7 @@
     width: auto;
     height: auto;
     float: left;
-    margin-left: 15%;
+    margin-left: 6%;
 }
 
 .nav {
@@ -76,4 +76,41 @@ table {
 
 tr:nth-child(even) {
     background-color: #808080;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+        background-color: #555;
+    }
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #808080;
+}
+.onayIkaz {
+    visibility: hidden;
+    text-align: justify;
+    color: gold;
+    font-weight: bold;
+}
+.ikaz {
+   
+    font-style :italic;
+    color :crimson;
+}
+.bilgilendirme{
+    font-size :smaller;
+    color :darkgray;
 }

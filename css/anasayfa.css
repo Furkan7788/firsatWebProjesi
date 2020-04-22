@@ -6,12 +6,11 @@
     width:auto;
     height: 150px;
 }
-.logo{
-   width : auto;
-   height : auto;
-   float:left;
-   margin-left : 15%;
- 
+.logo {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 6%;
 }
 .mainOpp{
    position :  absolute;
@@ -20,18 +19,16 @@
 }
 
 .nav {
-
-    float : right;
-    margin-top : 7%;
-    margin-right : 17%;
-    background-color :bisque;
-    opacity : 0.7;
-    color : red;
-    width : 750px;
-    height : 35px;
-    text-align : center;
-    padding-top : 5px;
-
+    float: right;
+    margin-top: 7%;
+    margin-right: 17%;
+    background-color: bisque;
+    opacity: 0.7;
+    color: red;
+    width: 750px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
 }
 a.navi {
     text-decoration: none;

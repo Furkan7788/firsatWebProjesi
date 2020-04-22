@@ -11,26 +11,8 @@ namespace webProjesi.html
 {
 
 
-    public partial class uyeAnasayfa
+    public partial class benimFirsatlarim
     {
-
-        /// <summary>
-        /// hdnKampanyaNo denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnKampanyaNo;
-
-        /// <summary>
-        /// firsatiOnayla denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button firsatiOnayla;
 
         /// <summary>
         /// myTable denetimi.
@@ -42,12 +24,30 @@ namespace webProjesi.html
         protected global::System.Web.UI.WebControls.Table myTable;
 
         /// <summary>
-        /// myRow denetimi.
+        /// Table1 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableHeaderRow myRow;
+        protected global::System.Web.UI.WebControls.Table Table1;
+
+        /// <summary>
+        /// Table2 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table Table2;
+
+        /// <summary>
+        /// Table3 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table Table3;
     }
 }

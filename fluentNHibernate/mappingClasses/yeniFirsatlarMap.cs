@@ -18,6 +18,7 @@ namespace webProjesi.fluentNHibernate.mappingClasses
             Map(x => x.adres);
             Map(x => x.mahalle);
             Map(x => x.sehir);
+            Map(x => x.urun);
             Map(x => x.normalFiyat);
             Map(x => x.indirimliFiyat);
             Map(x => x.kisiSayisi);

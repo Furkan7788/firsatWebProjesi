@@ -13,6 +13,7 @@ namespace webProjesi.fluentNHibernate.domainClasses
         public virtual string adres { set; get; }
         public virtual string mahalle { set; get; }
         public virtual string sehir { set; get; }
+        public virtual string urun { set; get; }
         public virtual string normalFiyat { set; get; }
         public virtual string indirimliFiyat { set; get; }
         public virtual string kisiSayisi { set; get; }

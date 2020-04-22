@@ -1,18 +1,13 @@
-﻿using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
-using NHibernate;
-using NHibernate.Tool.hbm2ddl;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using webProjesi.fluentNHibernate.domainClasses;
-
 namespace webProjesi.fluentNHibernate.controllers
 {
-    public class yeniFirsatlarController
+    public class firsatLogController
     {
-        public static void add(yeniFirsatlar firsat)
+        public static void add(firsatLog log)
         {
 
             var isession = NHibernateHelper.CreateSessionFactory();
@@ -21,27 +16,26 @@ namespace webProjesi.fluentNHibernate.controllers
                 using (var trans = session.BeginTransaction())
                 {
 
-                    session.SaveOrUpdate(firsat);
+                    session.SaveOrUpdate(log);
                     trans.Commit();
                 }
             }
 
         }
-        public static void update(yeniFirsatlar firsat)
+        public static void update(firsatLog log)
         {
-          
+
             var isession = NHibernateHelper.CreateSessionFactory();
             using (var session = isession.OpenSession())
             {
                 using (var trans = session.BeginTransaction())
                 {
 
-                    session.Update(firsat);
+                    session.Update(log);
                     trans.Commit();
                 }
             }
 
         }
     }
-
 }

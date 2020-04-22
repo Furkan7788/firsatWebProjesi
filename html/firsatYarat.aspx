@@ -18,7 +18,7 @@
         <div class="nav">
             <nav>
                 <a class="navi" href="uyeAnasayfa.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="#">Benim Fırsatlarım</a>&nbsp; &nbsp; &nbsp;
+                <a class="navi" href="benimFirsatlarim.aspx">Benim Fırsatlarım </a>&nbsp; &nbsp; &nbsp;
                 <a class="navi" href="firsatYarat.aspx">Fırsat Yarat</a>&nbsp; &nbsp;&nbsp;
                 <a class="navi" href="profilGoruntule.aspx">Profilim </a>&nbsp;
                 <a class="navi" href="girisYap.aspx" style ="color : red; font-weight:bold;">Cikis Yap </a>
@@ -62,6 +62,7 @@
             </fieldset>
             <fieldset>
                 <legend style ="color :yellowgreen"><span class="number" style ="color :white">2</span>Kampanya Bilgileri</legend>
+               <input type="text" name="urun" id="urun" placeholder="Urun Adı *" />
                <input type="text" name="normalFiyat" id="normalFiyat" placeholder="Normal Fiyat *" />
                <input type="text" name="indirimliFiyat" id="indirimliFiyat" placeholder="Indirimli Fiyat *" />
                <input type="text" name="kisiSayisi" id="kisiSayisi" placeholder="Kisi Sayisi *" />

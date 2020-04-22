@@ -26,81 +26,32 @@
         </div>
     </div>
 
-
+       BURAYADA TURE SEHIR MAHALLE GORE ARAMA MOTORU KOYCAN
     <div class="icerik">
-        <table>
-            <caption>Aktif Firsatlardan Yararlanmak Icin Hemen Uye Olun</caption>
-            <thead>
-                <tr>
-                 <td>Kampanya Numarasi</td>   <td>Firma Adi </td> <td>Firma Sektoru </td> <td> Adres </td> <td>Mahalle</td> <td>Sehir </td> <td>Normal Fiyat</td> <td>Indirimli Fiyat</td> <td>Kisi sayisi </td> <td>Ne zaman ?</td>
+         <span style =" margin-left :20%"> Aktif Firsatlardan Yararlanmak Icin Hemen Uye Olun</span> 
+        <asp:Table runat ="server" id="myTable">
+              
+            <asp:TableHeaderRow>
+               
+                 <asp:TableHeaderCell>Kampanya Numarasi </asp:TableHeaderCell>  
+                 <asp:TableHeaderCell>Firma Adi </asp:TableHeaderCell> 
+                 <asp:TableHeaderCell>Firma Sektoru </asp:TableHeaderCell> 
+                 <asp:TableHeaderCell>Adres </asp:TableHeaderCell> 
+                 <asp:TableHeaderCell>Mahalle</asp:TableHeaderCell>  
+                 <asp:TableHeaderCell>Sehir </asp:TableHeaderCell> 
+                 <asp:TableHeaderCell>Ürün</asp:TableHeaderCell>
+                 <asp:TableHeaderCell>Normal Fiyat</asp:TableHeaderCell>
+                 <asp:TableHeaderCell>Indirimli Fiyat</asp:TableHeaderCell>
+                 <asp:TableHeaderCell>Kisi sayisi </asp:TableHeaderCell>
+                 <asp:TableHeaderCell>Ne zaman ?</asp:TableHeaderCell>
                     
-                </tr>
-            </thead>
+        
+           </asp:TableHeaderRow>
             
-            <tbody>
-                <tr>
-                    <td id="kampanyaNumarasi">522</td>
-                    <td id="firmaAdi">Dedem Pide Kebab</td>
-                    <td id="firmaSektoru">Yemek</td>
-                    <td id="adres">Andas Carsisi</td>
-                    <td id="mahalle">Ugur Mumcu</td>
-                    <td id="sehir">Ankara</td>
-                    <td id="normalFiyat">22 TL</td>
-                    <td id="indirimliFiyat">15 TL</td>
-                    <td id="kisiSayisi">9</td>
-                    <td id="neZaman">22.03.2020</td>
-                </tr>
-                <tr>
-                    <td id="kampanyaNumarasi">522</td>
-                    <td id="firmaAdi">Dedem Pide Kebab</td>
-                    <td id="firmaSektoru">Yemek</td>
-                    <td id="adres">Andas Carsisi</td>
-                    <td id="mahalle">Ugur Mumcu</td>
-                    <td id="sehir">Ankara</td>
-                    <td id="normalFiyat">22 TL</td>
-                    <td id="indirimliFiyat">15 TL</td>
-                    <td id="kisiSayisi">9</td>
-                    <td id="neZaman">22.03.2020</td>
-                </tr>
-                <tr>
-                    <td id="kampanyaNumarasi">522</td>
-                    <td id="firmaAdi">Dedem Pide Kebab</td>
-                    <td id="firmaSektoru">Yemek</td>
-                    <td id="adres">Andas Carsisi</td>
-                    <td id="mahalle">Ugur Mumcu</td>
-                    <td id="sehir">Ankara</td>
-                    <td id="normalFiyat">22 TL</td>
-                    <td id="indirimliFiyat">15 TL</td>
-                    <td id="kisiSayisi">9</td>
-                    <td id="neZaman">22.03.2020</td>
-                </tr>
-                <tr>
-                    <td id="kampanyaNumarasi">522</td>
-                    <td id="firmaAdi">Dedem Pide Kebab</td>
-                    <td id="firmaSektoru">Yemek</td>
-                    <td id="adres">Andas Carsisi</td>
-                    <td id="mahalle">Ugur Mumcu</td>
-                    <td id="sehir">Ankara</td>
-                    <td id="normalFiyat">22 TL</td>
-                    <td id="indirimliFiyat">15 TL</td>
-                    <td id="kisiSayisi">9</td>
-                    <td id="neZaman">22.03.2020</td>
-                </tr>
-                <tr>
-                    <td id="kampanyaNumarasi">522</td>
-                    <td id="firmaAdi">Dedem Pide Kebab</td>
-                    <td id="firmaSektoru">Yemek</td>
-                    <td id="adres">Andas Carsisi</td>
-                    <td id="mahalle">Ugur Mumcu</td>
-                    <td id="sehir">Ankara</td>
-                    <td id="normalFiyat">22 TL</td>
-                    <td id="indirimliFiyat">15 TL</td>
-                    <td id="kisiSayisi">9</td>
-                    <td id="neZaman">22.03.2020</td>
-                </tr>
-
-            </tbody>
-        </table>
+           
+               
+          
+        </asp:Table>
 
     </div>
    

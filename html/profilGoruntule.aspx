@@ -19,9 +19,9 @@
         <div class="nav">
             <nav>
                 <a class="navi" href="uyeAnasayfa.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="#">Benim Fırsatlarım</a>&nbsp; &nbsp; &nbsp;
+                <a class="navi" href="benimFirsatlarim.aspx">Benim Fırsatlarım</a>&nbsp; &nbsp; &nbsp;
                 <a class="navi" href="firsatYarat.aspx">Fırsat Yarat</a>&nbsp; &nbsp;&nbsp;
-                <a class="navi" href="#">Profilim </a>&nbsp;
+                <a class="navi" href="benimFirsatlarim.aspx">Profilim </a>&nbsp;
                 <a class="navi" href="girisYap.aspx" style ="color : red; font-weight:bold;">Cikis Yap </a>
          
             </nav>

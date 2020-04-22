@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\anasayfa.css" />
+    <Content Include="css\benimFirsatlarim.css" />
     <Content Include="css\firsatlar.css" />
     <Content Include="css\firsatYarat.css" />
     <Content Include="css\giris.css" />
@@ -130,6 +131,7 @@
     <Content Include="css\wtwnedir.css" />
     <Content Include="html\anasayfa.aspx" />
     <Content Include="html\anasayfa.html" />
+    <Content Include="html\benimFirsatlarim.aspx" />
     <Content Include="html\firsatlar.aspx" />
     <Content Include="html\firsatlar.html" />
     <Content Include="html\firsatYarat.aspx" />
@@ -153,6 +155,7 @@
     <Content Include="JS\firsatYarat.js" />
     <Content Include="JS\slider-min.js" />
     <Content Include="JS\slider.js" />
+    <Content Include="JS\uyeAnasayfa.js" />
     <Content Include="JS\uyeProfil.js" />
     <Content Include="JS\yeniUyeKayit.js" />
     <Content Include="sliderImg\fastfood.jpg" />
@@ -164,10 +167,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fluentNHibernate\controllers\firsatLogController.cs" />
     <Compile Include="fluentNHibernate\controllers\yeniFirsatlarController.cs" />
     <Compile Include="fluentNHibernate\controllers\yeniUyeKayitController.cs" />
+    <Compile Include="fluentNHibernate\domainClasses\firsatLog.cs" />
     <Compile Include="fluentNHibernate\domainClasses\yeniFirsatlar.cs" />
     <Compile Include="fluentNHibernate\domainClasses\yeniUyeKayit.cs" />
+    <Compile Include="fluentNHibernate\mappingClasses\firsatLogMap.cs" />
     <Compile Include="fluentNHibernate\mappingClasses\yeniFirsatlarMap.cs" />
     <Compile Include="fluentNHibernate\mappingClasses\yeniUyeKayitMap.cs" />
     <Compile Include="fluentNHibernate\NHibernateHelper.cs" />
@@ -177,6 +183,13 @@
     </Compile>
     <Compile Include="html\anasayfa.aspx.designer.cs">
       <DependentUpon>anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\benimFirsatlarim.aspx.cs">
+      <DependentUpon>benimFirsatlarim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\benimFirsatlarim.aspx.designer.cs">
+      <DependentUpon>benimFirsatlarim.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\firsatlar.aspx.cs">
       <DependentUpon>firsatlar.aspx</DependentUpon>

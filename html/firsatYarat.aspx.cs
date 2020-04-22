@@ -28,6 +28,7 @@ namespace webProjesi.html
             yeniFirsat.adres = String.Format("{0}", Request.Form["adres"]);
             yeniFirsat.mahalle = hdnResultValue.Value;
             yeniFirsat.sehir = hdnResultValue2.Value;
+            yeniFirsat.urun = String.Format("{0}", Request.Form["urun"]);
             yeniFirsat.normalFiyat = String.Format("{0}", Request.Form["normalFiyat"]);
             yeniFirsat.indirimliFiyat = String.Format("{0}", Request.Form["indirimliFiyat"]);
             yeniFirsat.kisiSayisi = String.Format("{0}", Request.Form["kisiSayisi"]);
