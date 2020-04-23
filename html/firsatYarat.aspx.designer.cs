@@ -42,6 +42,24 @@ namespace webProjesi.html
         protected global::System.Web.UI.WebControls.HiddenField hdnResultValue2;
 
         /// <summary>
+        /// hdnResultValue3 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdnResultValue3;
+
+        /// <summary>
+        /// Optgroup1 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Optgroup1;
+
+        /// <summary>
         /// mahalle denetimi.
         /// </summary>
         /// <remarks>

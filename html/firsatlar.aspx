@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
      <title>Firsatlar</title>
     <link type="text/css"  rel="stylesheet" href="../css/firsatlar.css" />
-
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
    <div class="header">
@@ -26,34 +26,70 @@
         </div>
     </div>
 
-       BURAYADA TURE SEHIR MAHALLE GORE ARAMA MOTORU KOYCAN
+     <span style =" margin-left :25%; margin-top : 45%;"> Aktif Firsatlardan Yararlanmak Icin Hemen Uye Olun</span> 
+
+    <div class ="aramaMotoru">
+        <form runat ="server">
+             <asp:HiddenField ID="hdnFirsatTuru" Value = "null" runat="server" />
+             <asp:HiddenField ID="hdnMahalle" Value= "null" runat="server" />
+             <asp:HiddenField ID="hdnSehir" Value= "null" runat="server" />
+             <select id="sektorTuru" name="sektorTuru" >
+                        
+                    <optgroup label="Fırsat Türü" style ="color :yellowgreen" id="Optgroup1" runat="server">
+                        <option value="sec">FIRSAT TÜRÜ</option>
+                        <option value="Yemek">Yeme-İçme</option>
+                        <option value="Market">Market</option>
+                        <option value="Saglik-Guzellik">Saglık-Guzellik</option>
+                        <option value="Oto-Bakim">Oto Bakim</option>
+                        <option value="Sinema-Tiyatro">Sinema - Tiyatro</option>
+                        <option value="Spor-Salonu">Spor Salonu</option>
+                        <option value="Tatil">Tatil</option>
+                        <option value="Etkinlik">Etkinlik</option>
+                        <option value="Diger">Diger</option>
+                    </optgroup>
+                    </select>      
+                 
+         <select id="mahalleTuru" name="mahalle" >
+                        
+                    <optgroup label="Mahalle" style ="color :yellowgreen" id="mahalle" runat="server">
+                        <option value="sec">MAHALLE SECINIZ</option>
+                        <option value="Altindag">Altindag</option>
+                        <option value="Cankaya">Cankaya</option>
+                        <option value="Etimesgut">Etimesgut</option>
+                        <option value="Golbasi">Golbasi</option>
+                        <option value="Kecioren">Kecioren</option>
+                        <option value="Mamak">Mamak</option>
+                        <option value="Sincan">Sincan</option>
+                        <option value="Yenimahalle">Yenimahalle</option>
+                    </optgroup>
+                    </select>      
+                 
+                   <select id="select2" name="field4">
+                    <optgroup label="Sehir" style ="color :yellowgreen">
+                         <option value="sec">SEHIR SECINIZ</option>
+                        <option value="Ankara">Ankara</option>
+                    </optgroup>
+                    </select>  
+            <asp:Button runat ="server" class="listeleButton" Text ="Listele" OnClick="Unnamed1_Click" />
+            <asp:Button runat ="server" class="listeleButton" Text ="Tümü Fırsatları Listele" OnClick="Unnamed2_Click"  />
+        </form>
+    </div>
+
+
+
     <div class="icerik">
-         <span style =" margin-left :20%"> Aktif Firsatlardan Yararlanmak Icin Hemen Uye Olun</span> 
+        
+         
+        
         <asp:Table runat ="server" id="myTable">
               
-            <asp:TableHeaderRow>
-               
-                 <asp:TableHeaderCell>Kampanya Numarasi </asp:TableHeaderCell>  
-                 <asp:TableHeaderCell>Firma Adi </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Firma Sektoru </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Adres </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Mahalle</asp:TableHeaderCell>  
-                 <asp:TableHeaderCell>Sehir </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Ürün</asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Normal Fiyat</asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Indirimli Fiyat</asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Kisi sayisi </asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Ne zaman ?</asp:TableHeaderCell>
-                    
-        
-           </asp:TableHeaderRow>
-            
+           
            
                
           
         </asp:Table>
 
     </div>
-   
+   <script src="../JS/firsatlar.js"></script>
 </body>
 </html>

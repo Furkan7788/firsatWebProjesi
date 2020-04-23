@@ -9,3 +9,9 @@ $('#select2').change(function () {
     debugger;
     document.getElementById("hdnResultValue2").value = selected.closest('option').attr('value');
 });
+
+$('#sektorTuru').change(function () {
+    var selected = $(':selected', this);
+    debugger;
+    document.getElementById("hdnResultValue3").value = selected.closest('option').attr('value');
+});

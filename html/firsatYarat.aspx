@@ -31,11 +31,27 @@
             <p id="ikaz" style="color : yellowgreen " runat="server"> </p>
              <asp:HiddenField ID="hdnResultValue" Value="0" runat="server" />
              <asp:HiddenField ID="hdnResultValue2" Value="0" runat="server" />
+             <asp:HiddenField ID="hdnResultValue3" Value="0" runat="server" />
 
             <fieldset>
                     <legend style ="color :yellowgreen"><span class="number" style ="color :white">1</span> Fırsat Bilgileri</legend>
                     <input type="text" name="firmaAdi" id="firmaAdi" placeholder="Firma Adı *" /> 
-                    <input type="text" name="firmaSektoru" id="firmaSektoru" placeholder="Firma Sektörü *" />
+                    <select id="sektorTuru" name="sektorTuru" >
+                        
+                    <optgroup label="Fırsat Türü" style ="color :yellowgreen" id="Optgroup1" runat="server">
+                        <option value="sec">FIRSAT TÜRÜ</option>
+                        <option value="Yemek">Yeme-İçme</option>
+                        <option value="Market">Market</option>
+                        <option value="Saglik-Guzellik">Saglık-Guzellik</option>
+                        <option value="Oto-Bakim">Oto Bakim</option>
+                        <option value="Sinema-Tiyatro">Sinema - Tiyatro</option>
+                        <option value="Spor-Salonu">Spor Salonu</option>
+                        <option value="Tatil">Tatil</option>
+                        <option value="Etkinlik">Etkinlik</option>
+                        <option value="Diger">Diger</option>
+                    
+                    </optgroup>
+                    </select>      
                     <textarea name="adres" id="adres" placeholder="Açık Adres *"></textarea>
                     
                     <select id="select1" name="mahalle" >

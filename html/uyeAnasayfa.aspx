@@ -26,51 +26,85 @@
             </nav>
         </div>
     </div>
-    
-        BURAYADA TURE SEHIR MAHALLE GORE ARAMA MOTORU KOYCAN
-    <div class ="onayIkaz">
         <form runat ="server">
+    
+    <div class ="onayIkaz">
+    
                <asp:HiddenField ID="hdnKampanyaNo" Value="0" runat="server" />
         <p><span class ="ikaz" id="ikaz1"> </span> Numaralı Kampanya -> <span  class ="ikaz"  id ="ikaz2"></span> daki fırsat için <span  class ="ikaz"  id="ikaz3"></span>
             tarihinde <span  class ="ikaz"  id="ikaz4"></span> /<span  class ="ikaz"  id="ikaz5"></span> adresinde olmayı onaylıyor musun ?
           <asp:Button ID="firsatiOnayla" runat="Server" text="ONAYLA" OnClick="firsatiOnayla_Click" ></asp:Button>
         </p>
-         </form>
+   
     </div>
     <p class ="bilgilendirme" >Bilgilendirme: Fırsata kayıt yaptırmak için fırsatın üzerine tıkladıktan sonra onay veriniz. Kişi sayısının ekside olması 
         gerekli kişi sayısı sağlanmış olmasi demektir fakat bu sizin firsattan yararlanamayacağınız anlamına gelmez. Fırsatı onayladıktan sonra sayfayı yenileyiniz
         sonra kişi sayısının düştüğünü ve benim fırsatlarım da kayıt olduğunuzu göreceksiniz.
     </p>
 
-    <div class="icerik">
-         <asp:Table runat ="server" id="myTable">
-              
-            <asp:TableHeaderRow  Runat="server" id="myRow" >
-               
-                 <asp:TableHeaderCell >Kampanya Numarasi </asp:TableHeaderCell>  
-                 <asp:TableHeaderCell >Firma Adi </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Firma Sektoru </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Adres </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Mahalle</asp:TableHeaderCell>  
-                 <asp:TableHeaderCell>Sehir </asp:TableHeaderCell> 
-                 <asp:TableHeaderCell>Ürün</asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Normal Fiyat</asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Indirimli Fiyat</asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Kisi sayisi </asp:TableHeaderCell>
-                 <asp:TableHeaderCell>Ne zaman ?</asp:TableHeaderCell>
+     <div class ="aramaMotoru">
+       
+             <asp:HiddenField ID="hdnFirsatTuru" Value = "null" runat="server" />
+             <asp:HiddenField ID="hdnMahalle" Value= "null" runat="server" />
+             <asp:HiddenField ID="hdnSehir" Value= "null" runat="server" />
+             <select id="sektorTuru" name="sektorTuru" >
+                        
+                    <optgroup label="Fırsat Türü" style ="color :yellowgreen" id="Optgroup2" runat="server">
+                        <option value="sec">FIRSAT TÜRÜ</option>
+                        <option value="Yemek">Yeme-İçme</option>
+                        <option value="Market">Market</option>
+                        <option value="Saglik-Guzellik">Saglık-Guzellik</option>
+                        <option value="Oto-Bakim">Oto Bakim</option>
+                        <option value="Sinema-Tiyatro">Sinema - Tiyatro</option>
+                        <option value="Spor-Salonu">Spor Salonu</option>
+                        <option value="Tatil">Tatil</option>
+                        <option value="Etkinlik">Etkinlik</option>
+                        <option value="Diger">Diger</option>
+                    </optgroup>
+                    </select>      
                  
+         <select id="mahalleTuru" name="mahalle" >
+                        
+                    <optgroup label="Mahalle" style ="color :yellowgreen" id="Optgroup3" runat="server">
+                        <option value="sec">MAHALLE</option>
+                        <option value="Altindag">Altindag</option>
+                        <option value="Cankaya">Cankaya</option>
+                        <option value="Etimesgut">Etimesgut</option>
+                        <option value="Golbasi">Golbasi</option>
+                        <option value="Kecioren">Kecioren</option>
+                        <option value="Mamak">Mamak</option>
+                        <option value="Sincan">Sincan</option>
+                        <option value="Yenimahalle">Yenimahalle</option>
+                    </optgroup>
+                    </select>      
+                 
+                   <select id="select2" name="field4">
+                    <optgroup label="Sehir" style ="color :yellowgreen">
+                         <option value="sec">SEHIR SECINIZ</option>
+                        <option value="Ankara">Ankara</option>
+                    </optgroup>
+                    </select>  
+            <asp:Button runat ="server" class="listeleButton" Text ="Listele" OnClick="Unnamed1_Click" />
+            <asp:Button runat ="server" class="listeleButton" Text ="Tümü Fırsatları Listele" OnClick="Unnamed2_Click"  />
+       
+    </div>
+
+
+
+    <div class="icerik">
         
-           </asp:TableHeaderRow>
+         
+        
+        <asp:Table runat ="server" id="myTable">
+              
+           
+           
+               
           
         </asp:Table>
-       
-
-
-
-
 
     </div>
-    
+    </form>
    
     <script src="../JS/uyeAnasayfa.js"></script>
 </body>

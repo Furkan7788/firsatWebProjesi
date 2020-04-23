@@ -24,7 +24,7 @@ namespace webProjesi.html
             
             var yeniFirsat = new yeniFirsatlar();
             yeniFirsat.firmaAdi= String.Format("{0}", Request.Form["firmaAdi"]);
-            yeniFirsat.firmaSektoru = String.Format("{0}", Request.Form["firmaSektoru"]);
+            yeniFirsat.firmaSektoru = hdnResultValue3.Value;
             yeniFirsat.adres = String.Format("{0}", Request.Form["adres"]);
             yeniFirsat.mahalle = hdnResultValue.Value;
             yeniFirsat.sehir = hdnResultValue2.Value;

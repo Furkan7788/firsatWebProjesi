@@ -152,6 +152,8 @@
     <Content Include="img\nedirBuWTW.jpg" />
     <Content Include="img\uyePP.PNG" />
     <Content Include="JS\anasayfa.js" />
+    <Content Include="JS\benimFirsatlarim.js" />
+    <Content Include="JS\firsatlar.js" />
     <Content Include="JS\firsatYarat.js" />
     <Content Include="JS\slider-min.js" />
     <Content Include="JS\slider.js" />

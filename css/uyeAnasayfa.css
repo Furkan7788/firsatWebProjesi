@@ -114,3 +114,36 @@ tr:nth-child(even) {
     font-size :smaller;
     color :darkgray;
 }
+.tableHeader {
+    color: chocolate;
+}
+.aramaMotoru {
+    margin-top: 2%;
+    margin-left: 18%;
+}
+
+optgroup {
+    background-color: antiquewhite;
+}
+
+optgroup option {
+        color: chocolate;
+        height: 155%;
+        font-weight: bolder;
+
+}
+
+select {
+    width: 25%;
+    background-color: whitesmoke;
+    color: chocolate;
+    font-weight: bold;
+}
+
+
+select {
+    width: 25%;
+    background-color: bisque;
+    color: chocolate;
+    font-weight: bold;
+}

@@ -31,7 +31,7 @@
           
         <asp:Table runat ="server" id="myTable">
               
-            <asp:TableHeaderRow>
+            <asp:TableHeaderRow CssClass ="tableHeader">
                
                  <asp:TableHeaderCell>Kampanya Numarasi </asp:TableHeaderCell>  
                  <asp:TableHeaderCell>Firma Adi </asp:TableHeaderCell> 

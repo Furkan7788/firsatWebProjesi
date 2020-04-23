@@ -19,7 +19,7 @@ namespace webProjesi.html
             using (var session = isession.OpenSession())
             {
                 var query = from yeniFirsatlar in session.Query<yeniFirsatlar>()
-                            where yeniFirsatlar.onayDurumu == "gecmisTarih"
+                            where yeniFirsatlar.onayDurumu == "gecmisFirsat"
                             select yeniFirsatlar;
                 var firsatlar = query.ToList();
                 foreach (var item in firsatlar)

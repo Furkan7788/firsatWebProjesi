@@ -42,6 +42,22 @@ namespace webProjesi.fluentNHibernate.controllers
             }
 
         }
+        public static void delete(int firsatId)
+        {
+
+            var isession = NHibernateHelper.CreateSessionFactory();
+            using (var session = isession.OpenSession())
+            {
+                using (var trans = session.BeginTransaction())
+                {
+                    yeniFirsatlar deleted = new yeniFirsatlar();
+                    deleted.id = firsatId;
+                    session.Delete(deleted);
+                    trans.Commit();
+                }
+            }
+
+        }
     }
 
 }

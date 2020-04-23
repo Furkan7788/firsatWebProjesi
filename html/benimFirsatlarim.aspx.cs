@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using webProjesi.fluentNHibernate;
+using webProjesi.fluentNHibernate.controllers;
 using webProjesi.fluentNHibernate.domainClasses;
 using webProjesi.services;
 namespace webProjesi.html
@@ -28,6 +29,7 @@ namespace webProjesi.html
                 {
                     TableRow row = new TableRow();
                     TableCell kampanyaNo = new TableCell();
+                    kampanyaNo.ID = "kNo";
                     TableCell firmaAdi = new TableCell();
                     TableCell firmaSektoru = new TableCell();
                     TableCell adres = new TableCell();
@@ -76,6 +78,7 @@ namespace webProjesi.html
                 {
                     TableRow row = new TableRow();
                     TableCell kampanyaNo = new TableCell();
+                    kampanyaNo.ID = "kNo";
                     TableCell firmaAdi = new TableCell();
                     TableCell firmaSektoru = new TableCell();
                     TableCell adres = new TableCell();
@@ -124,6 +127,7 @@ namespace webProjesi.html
                 {
                     TableRow row = new TableRow();
                     TableCell kampanyaNo = new TableCell();
+                    kampanyaNo.ID = "kNo";
                     TableCell firmaAdi = new TableCell();
                     TableCell firmaSektoru = new TableCell();
                     TableCell adres = new TableCell();
@@ -172,6 +176,7 @@ namespace webProjesi.html
                 {
                     TableRow row = new TableRow();
                     TableCell kampanyaNo = new TableCell();
+                    kampanyaNo.ID = "kNo";
                     TableCell firmaAdi = new TableCell();
                     TableCell firmaSektoru = new TableCell();
                     TableCell adres = new TableCell();
@@ -218,6 +223,38 @@ namespace webProjesi.html
            
 
 
+        }
+
+        protected void bekleyenFirsat_Click(object sender, EventArgs e)
+        {   
+            
+            yeniFirsatlarController.delete(Convert.ToInt32( hdnBekleyenKampanyaNo.Value));
+        }
+
+        protected void vazgec_Click(object sender, EventArgs e)
+        {
+            var isession = NHibernateHelper.CreateSessionFactory();
+            using (var session = isession.OpenSession())
+            {
+                var query = from yeniFirsatlar in session.Query<yeniFirsatlar>()
+                            where yeniFirsatlar.id.ToString() == hdnGidelecekFirsatId.Value
+                            select yeniFirsatlar;
+               
+                var firsat = query.ToList();
+                foreach (var item in firsat)
+                {
+                    System.Diagnostics.Debug.WriteLine(item.id);
+                    var kisiSayisi = Int32.Parse(item.kisiSayisi);
+                    kisiSayisi++;
+                    item.kisiSayisi = kisiSayisi.ToString();
+                    yeniFirsatlarController.update(item);
+                }
+
+                var updateQuery = session.CreateQuery("Update firsatLog set firsatdurumu = 'Gitmekten Vazgecti' where uyetcno =:uyeTcNo and firsatid =:firsatId  ");
+                updateQuery.SetParameter("firsatId", hdnGidelecekFirsatId.Value);
+                updateQuery.SetParameter("uyeTcNo", services.uyeService.uye.tcNo);
+                updateQuery.ExecuteUpdate();
+             }
         }
     }
 }

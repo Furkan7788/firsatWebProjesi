@@ -60,3 +60,17 @@ table tbody tr:hover {
 tr:nth-child(even) {
     background-color: #808080;
 }
+.tableHeader {
+   
+    color:chocolate;
+}
+.onayIkaz {
+    visibility: hidden;
+    text-align: justify;
+    color: gold;
+    font-weight: bold;
+}
+.bilgilendirme {
+    font-size: smaller;
+    color: darkgray;
+}
