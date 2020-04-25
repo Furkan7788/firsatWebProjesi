@@ -1,22 +1,27 @@
 ﻿body {
     background-image: url('../img/mainBG.jpg');
-    color: antiquewhite
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
 .header {
     width: auto;
-    height: 150px;
+    height: auto;
 }
 
 .logo {
-    width: auto;
+    width: 100%;
     height: auto;
     float: left;
-    margin-left: 6%;
 }
 .aramaMotoru {
     margin-top: 2%;
-    margin-left : 18%;
+    margin-left : 1%;
+    font-size : 1.1vw;
+    width:100%;
 }
 optgroup {
     background-color:antiquewhite;
@@ -36,28 +41,28 @@ select {
 
 .nav {
     float: right;
-    margin-top: 7%;
-    margin-right: 17%;
+    margin-top: 15%;
+    margin-right: 2%;
     background-color: bisque;
     opacity: 0.7;
     color: red;
-    width: 750px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
+    width: 140%;
+    height: auto;
+    text-align: justify;
+    padding: 7px;
 }
 
 a.navi {
     text-decoration: none;
     color: cornsilk;
-    font-size: large;
-    text-align: center;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 
-    a.navi:hover {
-        color: orange;
-        font-weight: bolder;
-    }
+a.navi:hover {
+    color: orange;
+    font-weight: bolder;
+}
 
 a.navi {
     padding: 5px;
@@ -83,20 +88,46 @@ table {
     border: 1px solid black;
     width: 100%;
     text-align : center;
+    color :bisque;
+    font-size:1.1vw;
 }
 table thead{
     font-weight:bolder;
     font-size : larger;
-    color : burlywood
+    color : burlywood;
     
 }
 table tbody tr:hover {
-    background-color: darkcyan;
+    background-color: burlywood;
 }
 tr:nth-child(even) {
-    background-color: #808080;
+    background-color: goldenrod;
    
 }
 .tableHeader {
     color: chocolate;
+    font-weight:bolder;
+
+}
+.ikaz1 {
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    color: bisque;
+    margin-left: 35%;
+    font-size: 1vw;
+    margin-top: 45%;
+
+}
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
 }

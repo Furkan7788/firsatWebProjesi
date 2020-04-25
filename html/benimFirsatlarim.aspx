@@ -8,21 +8,34 @@
      <title>Benim Fırsatları</title>
     <link type ="text/css" rel ="stylesheet" href="../css/benimFirsatlarim.css" />
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-   <div class="header">
-        <div class="logo">
-            <img src="../img/logo.png" />
-        </div>
-        <div class="nav">
-            <nav>
-                 <a class="navi" href="uyeAnasayfa.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="benimFirsatlarim.aspx">Benim Fırsatlarım</a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="firsatYarat.aspx">Fırsat Yarat</a>&nbsp; &nbsp;&nbsp;
-                <a class="navi" href="profilGoruntule.aspx">Profilim </a>&nbsp;
-                <a class="navi" href="girisYap.aspx" style ="color : red; font-weight:bold;">Cikis Yap </a>
-            </nav>
-        </div>
+   <div class="container">
+     <div class="header">
+        <div class="row"> 
+         
+                 <div class="col">
+                     <div class="logo">
+                     <img src="../img/logo.png" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="nav">
+                        <nav>
+                             <a class="navi" href="uyeAnasayfa.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
+                             <a class="navi" href="benimFirsatlarim.aspx">Benim Firsatlarım </a>&nbsp; &nbsp; &nbsp;
+                             <a class="navi" href="firsatYarat.aspx">Fırsat Yarat</a>&nbsp; &nbsp;&nbsp;
+                             <a class="navi" href="profilGoruntule.aspx">Profilim </a>&nbsp;
+                             <a class="navi" href="girisYap.aspx" style ="color : red; font-weight:bold;">Cikis Yap </a>
+                      </nav>
+                    </div>
+                </div>
+       </div>
     </div>
 
     <form runat ="server">
@@ -35,7 +48,7 @@
          
     </div>
 
-            <h2 style=" margin-left : 20%; color : orangered">Gidecegim Firsatlar  <span class ="bilgilendirme">(Gidemeyeceğiniz fırsatı üzerine tıklayarak iptal edebilirsiniz.)</span></h2>
+            <span class="baslik" style=" margin-left : 20%; color : orangered">Gidecegim Firsatlar  <span class ="bilgilendirme">(Gidemeyeceğiniz fırsatı üzerine tıklayarak iptal edebilirsiniz.)</span></span>
      <asp:Table runat ="server" id="myTable">
               
             <asp:TableHeaderRow CssClass="tableHeader">
@@ -55,7 +68,7 @@
            </asp:TableHeaderRow>
         </asp:Table>
 
-       <h2 style=" margin-left : 20%; color : orangered">Geçmiş Fırsatlarım</h2>
+       <span class="baslik" style=" margin-left : 20%; color : orangered">Geçmiş Fırsatlarım</span>
        <asp:Table runat ="server" id="Table1">
               
             <asp:TableHeaderRow  CssClass="tableHeader">
@@ -84,7 +97,7 @@
         
     </div>
 
-      <h2 style=" margin-left : 20%; color : orangered">Onay Bekleyen Firsatlarim <span class ="bilgilendirme">(Fırsatınız onaylanana kadar iptal edebilirsiniz. İptal etmek istediğiniz fırsatı seçip onaylayın.)</span></h2> 
+      <span class="baslik" style=" margin-left : 20%; color : orangered">Onay Bekleyen Firsatlarim <span class ="bilgilendirme">(Fırsatınız onaylanana kadar iptal edebilirsiniz. İptal etmek istediğiniz fırsatı seçip onaylayın.)</span></span> 
        <asp:Table runat ="server" id="Table2">
               
             <asp:TableHeaderRow  CssClass="tableHeader">
@@ -103,7 +116,7 @@
                 
            </asp:TableHeaderRow>
         </asp:Table>
-     <h2 style=" margin-left : 20%; color : orangered">Reddedilen Firsatlarim</h2>
+     <span class="baslik" style=" margin-left : 20%; color : orangered">Reddedilen Firsatlarim</span>
        <asp:Table runat ="server" id="Table3">
               
             <asp:TableHeaderRow CssClass="tableHeader" >
@@ -125,5 +138,6 @@
                
           </form>
     <script src="../JS/benimFirsatlarim.js"></script>
+       </div>
 </body>
 </html>

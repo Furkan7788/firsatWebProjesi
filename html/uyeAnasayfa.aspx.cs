@@ -88,16 +88,22 @@ namespace webProjesi.html
                     // HER FIRSAT ICIN BI SATIR OLUSTURDU.
                     TableRow row = new TableRow();
                     TableCell kampanyaNo = new TableCell();
+                    kampanyaNo.CssClass = "kNo";
                     TableCell firmaAdi = new TableCell();
+                    firmaAdi.CssClass = "fAdi";
                     TableCell firmaSektoru = new TableCell();
+                    firmaSektoru.CssClass = "fSektoru";
                     TableCell adres = new TableCell();
+                    adres.CssClass = "fAdres";
                     TableCell mahalle = new TableCell();
+                    mahalle.CssClass = "fMahalle";
                     TableCell sehir = new TableCell();
                     TableCell urun = new TableCell();
                     TableCell fiyat = new TableCell();
                     TableCell indirimliFiyat = new TableCell();
                     TableCell kisiSayisi = new TableCell();
                     TableCell neZaman = new TableCell();
+                    neZaman.CssClass = "neZmn";
 
                     if (listelemeTuru == "firsatTuru")
                     { // FIRSAT TURUNE GORE LISTELEME YAPARSA 
@@ -274,30 +280,52 @@ namespace webProjesi.html
 
     protected void firsatiOnayla_Click(object sender, EventArgs e)
         {
+            var sayac = 0;
             var isession = NHibernateHelper.CreateSessionFactory();
             using (var session = isession.OpenSession())
             {
                 var query = from yeniFirsatlar in session.Query<yeniFirsatlar>()
-                            where yeniFirsatlar.id.ToString() ==  hdnKampanyaNo.Value
+                            where yeniFirsatlar.id.ToString() == hdnKampanyaNo.Value
                             select yeniFirsatlar;
-                
-                 var firsat = query.ToList();
-                foreach(var item in firsat)
+
+                var firsat = query.ToList();
+                foreach (var item in firsat)
                 {
                     System.Diagnostics.Debug.WriteLine(item.id);
-                    var kisiSayisi =  Int32.Parse( item.kisiSayisi);
+                    var kisiSayisi = Int32.Parse(item.kisiSayisi);
                     kisiSayisi--;
                     item.kisiSayisi = kisiSayisi.ToString();
                     yeniFirsatlarController.update(item);
                 }
+                // ayni firsata uye olmamasi icin alt sorgu
+                var firsatQuery = from firsatLog in session.Query<firsatLog>()
+                                  where firsatLog.uyeTcNo == services.uyeService.uye.tcNo && firsatLog.firsatId == hdnKampanyaNo.Value && firsatLog.firsatDurumu == "firsata gidecek"
+                                  select firsatLog;
+                var firsatLogs = firsatQuery.ToList();
+                
+                foreach (var item in firsatLogs)
+                {
+                    // listede item varsa
+                    sayac++;
+                    System.Diagnostics.Debug.WriteLine(sayac);
+                }
             }
-             firsatLog log = new firsatLog();
-            log.firsatId = hdnKampanyaNo.Value;
-            log.uyeTcNo = services.uyeService.uye.tcNo;
-            log.firsatDurumu = "firsata gidecek";
-            firsatLogController.add(log); // TRIGER YAZCAN AYNI FIRSATA TEKRAR KATILAMAYCAK
+            if (sayac > 0) {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Bu Firsata Zaten Gidiyorsunuz')", true);
+                sayac = 0;
 
-        }
+            }
+            else
+            {
+                firsatLog log = new firsatLog();
+                log.firsatId = hdnKampanyaNo.Value;
+                log.uyeTcNo = services.uyeService.uye.tcNo;
+                log.firsatDurumu = "firsata gidecek";
+                firsatLogController.add(log); // TRIGER YAZCAN AYNI FIRSATA TEKRAR KATILAMAYCAK
+            }
+
+
+}
     }
 }
   

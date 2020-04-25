@@ -1,38 +1,41 @@
 ﻿body {
     background-image: url('../img/mainBG.jpg');
-    color: antiquewhite
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
 .header {
     width: auto;
-    height: 150px;
+    height: auto;
 }
 
 .logo {
-    width: auto;
+    width: 100%;
     height: auto;
     float: left;
-    margin-left: 6%;
 }
 
 .nav {
     float: right;
-    margin-top: 7%;
-    margin-right: 17%;
+    margin-top: 20%;
+    margin-right: 10%;
     background-color: bisque;
     opacity: 0.7;
     color: red;
-    width: 750px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
+    width: 115%;
+    height: auto;
+    text-align: justify;
+    padding: 7px;
 }
 
 a.navi {
     text-decoration: none;
     color: cornsilk;
-    font-size: large;
-    text-align: center;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 
     a.navi:hover {
@@ -44,9 +47,6 @@ a.navi {
     padding: 5px;
     color: tomato;
 }
-.tableHeader {
-    color: chocolate;
-}   
 
 footer {
     bottom: 0px;

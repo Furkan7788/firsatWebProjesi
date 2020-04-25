@@ -1,40 +1,46 @@
 ﻿.body {
-    background-image : url('../img/mainBG.jpg');
-    color : antiquewhite
+    background-image: url('../img/mainBG.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 .header {
     width:auto;
-    height: 150px;
+    height: auto;
 }
 .logo {
-    width: auto;
+    width: 100%;
     height: auto;
     float: left;
-    margin-left: 6%;
 }
 .mainOpp{
    position :  absolute;
-   margin-top : 4%;
-   text-align : center;
+   margin-top :1%;
+   margin-left: 8%;
+   text-align : justify;
 }
 
 .nav {
     float: right;
-    margin-top: 7%;
-    margin-right: 17%;
+    margin-top: 15%;
+    margin-right: 2%;
     background-color: bisque;
     opacity: 0.7;
     color: red;
-    width: 750px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
+    width: 140%;
+    height: auto;
+    text-align: justify;
+    padding : 7px;
+
+   
 }
 a.navi {
     text-decoration: none;
     color: cornsilk;
-    font-size: large;
-    text-align : center;
+    font-size: 1.2vw;
+    text-align : justify;
 }
 a.navi:hover{
     
@@ -75,6 +81,8 @@ footer {
     position: relative;
     margin: 0 auto; /*make the image slider center-aligned */
     box-shadow: 0px 1px 5px #999999;
+    width: 100%;
+    height: auto;
 }
 
     #slider img {
@@ -167,4 +175,6 @@ div.navBulletsWrapper {
     -ms-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
+    width:100%;
+    height :auto;   
 }

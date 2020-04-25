@@ -1,0 +1,46 @@
+﻿body {
+    background-image: url('../img/mainBG.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+.buttons {
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    
+}
+table {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    color: bisque;
+    font-size: 1.1vw;
+}
+table thead {
+        font-weight: bolder;
+        font-size: larger;
+        color: burlywood;
+}
+
+table tbody tr:hover {
+        background-color: burlywood;
+}
+
+tr:nth-child(even) {
+    background-color: goldenrod;
+}
+
+.tableHeader {
+    color: chocolate;
+    font-weight: bolder;
+}
+.onay{
+    margin-top:2%;
+    text-align :center;
+    color :bisque;
+    font-size:1vw;
+}

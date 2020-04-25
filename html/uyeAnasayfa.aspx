@@ -8,23 +8,35 @@
     <title>WinToWin</title>
     <link type ="text/css" rel ="stylesheet" href="../css/uyeAnasayfa.css" />
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+    <div class="container">
      <div class="header">
-        <div class="logo">
-            <img src="../img/logo.png" />
-        </div>
-       
-        <div class="nav">
-            <nav>
-                <a class="navi" href="uyeAnasayfa.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="benimFirsatlarim.aspx">Benim Firsatlarım </a>&nbsp; &nbsp; &nbsp;
-                <a class="navi" href="firsatYarat.aspx">Fırsat Yarat</a>&nbsp; &nbsp;&nbsp;
-                <a class="navi" href="profilGoruntule.aspx">Profilim </a>&nbsp;
-                <a class="navi" href="girisYap.aspx" style ="color : red; font-weight:bold;">Cikis Yap </a>
+        <div class="row"> 
          
-            </nav>
-        </div>
+                 <div class="col">
+                     <div class="logo">
+                     <img src="../img/logo.png" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="nav">
+                        <nav>
+                             <a class="navi" href="uyeAnasayfa.aspx">Fırsatlar</a>&nbsp; &nbsp; &nbsp;
+                             <a class="navi" href="benimFirsatlarim.aspx">Benim Firsatlarım </a>&nbsp; &nbsp; &nbsp;
+                             <a class="navi" href="firsatYarat.aspx">Fırsat Yarat</a>&nbsp; &nbsp;&nbsp;
+                             <a class="navi" href="profilGoruntule.aspx">Profilim </a>&nbsp;
+                             <a class="navi" href="girisYap.aspx" style ="color : red; font-weight:bold;">Cikis Yap </a>
+                      </nav>
+                    </div>
+                </div>
+       </div>
     </div>
         <form runat ="server">
     
@@ -105,7 +117,7 @@
 
     </div>
     </form>
-   
+   </div>
     <script src="../JS/uyeAnasayfa.js"></script>
 </body>
 </html>

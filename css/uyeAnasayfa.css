@@ -1,39 +1,41 @@
 ﻿body {
     background-image: url('../img/mainBG.jpg');
-    color: antiquewhite;
-    height : 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
 .header {
     width: auto;
-    height: 150px;
+    height: auto;
 }
 
 .logo {
-    width: auto;
+    width: 100%;
     height: auto;
     float: left;
-    margin-left: 6%;
 }
 
 .nav {
     float: right;
-    margin-top: 7%;
-    margin-right: 17%;
+    margin-top: 20%;
+    margin-right: 10%;
     background-color: bisque;
     opacity: 0.7;
     color: red;
-    width: 750px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
+    width: 115%;
+    height: auto;
+    text-align: justify;
+    padding: 7px;
 }
 
 a.navi {
     text-decoration: none;
     color: cornsilk;
-    font-size: large;
-    text-align: center;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 
     a.navi:hover {
@@ -46,36 +48,32 @@ a.navi {
     color: tomato;
 }
 
-footer {
-    bottom: -98px;
-    left: -11px;
-    width: 98%;
-    height: 50px;
-    padding: 15px;
-    background-color: #000;
-    opacity: 0.7;
-    text-align: center;
-    position: fixed;
-    margin-right: 50%;
-}
+
 table {
     border: 1px solid black;
     width: 100%;
     text-align: center;
+    color: bisque;
+    font-size: 1.1vw;
 }
 
     table thead {
         font-weight: bolder;
         font-size: larger;
-        color: burlywood
+        color: burlywood;
     }
 
     table tbody tr:hover {
-        background-color: darkcyan;
+        background-color: burlywood;
     }
 
 tr:nth-child(even) {
-    background-color: #808080;
+    background-color: goldenrod;
+}
+
+.tableHeader {
+    color: chocolate;
+    font-weight: bolder;
 }
 
 .collapsible {
@@ -111,7 +109,7 @@ tr:nth-child(even) {
     color :crimson;
 }
 .bilgilendirme{
-    font-size :smaller;
+    font-size :0.8vw;
     color :darkgray;
 }
 .tableHeader {
@@ -119,7 +117,9 @@ tr:nth-child(even) {
 }
 .aramaMotoru {
     margin-top: 2%;
-    margin-left: 18%;
+    margin-left: 1%;
+    font-size: 1.1vw;
+    width: 100%;
 }
 
 optgroup {

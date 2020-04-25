@@ -119,6 +119,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\adminGiris.css" />
+    <Content Include="css\adminYonetim.css" />
     <Content Include="css\anasayfa.css" />
     <Content Include="css\benimFirsatlarim.css" />
     <Content Include="css\firsatlar.css" />
@@ -129,28 +131,25 @@
     <Content Include="css\uyeAnasayfa.css" />
     <Content Include="css\uyeol.css" />
     <Content Include="css\wtwnedir.css" />
+    <Content Include="html\adminGiris.aspx" />
+    <Content Include="html\adminYonetim.aspx" />
     <Content Include="html\anasayfa.aspx" />
-    <Content Include="html\anasayfa.html" />
     <Content Include="html\benimFirsatlarim.aspx" />
     <Content Include="html\firsatlar.aspx" />
-    <Content Include="html\firsatlar.html" />
     <Content Include="html\firsatYarat.aspx" />
-    <Content Include="html\giris.html" />
     <Content Include="html\kazananlar.aspx" />
-    <Content Include="html\kazananlar.html" />
     <Content Include="html\profilGoruntule.aspx" />
     <Content Include="html\uyeAnasayfa.aspx" />
     <Content Include="html\uyeol.aspx" />
-    <Content Include="html\uyeol.html" />
     <Content Include="html\girisYap.aspx" />
     <Content Include="html\wtwnedir.aspx" />
-    <Content Include="html\wtwnedir.html" />
     <Content Include="img\bullet.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\mainBG.jpg" />
     <Content Include="img\mainOpportunity .jpg" />
     <Content Include="img\nedirBuWTW.jpg" />
     <Content Include="img\uyePP.PNG" />
+    <Content Include="JS\adminYonetim.js" />
     <Content Include="JS\anasayfa.js" />
     <Content Include="JS\benimFirsatlarim.js" />
     <Content Include="JS\firsatlar.js" />
@@ -179,6 +178,20 @@
     <Compile Include="fluentNHibernate\mappingClasses\yeniFirsatlarMap.cs" />
     <Compile Include="fluentNHibernate\mappingClasses\yeniUyeKayitMap.cs" />
     <Compile Include="fluentNHibernate\NHibernateHelper.cs" />
+    <Compile Include="html\adminGiris.aspx.cs">
+      <DependentUpon>adminGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\adminGiris.aspx.designer.cs">
+      <DependentUpon>adminGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\adminYonetim.aspx.cs">
+      <DependentUpon>adminYonetim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\adminYonetim.aspx.designer.cs">
+      <DependentUpon>adminYonetim.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\anasayfa.aspx.cs">
       <DependentUpon>anasayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
